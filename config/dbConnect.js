@@ -2,7 +2,7 @@ const { default: mongoose } = require("mongoose")
 
 const dbConnect = () => {
     try {
-        const conn = mongoose.connect('mongodb://localhost:27017/digitic');
+        const conn = mongoose.connect(process.env.MONGODB_URL);
         console.log("database Connect success");
     } catch (error) {
        console.log("database error");
