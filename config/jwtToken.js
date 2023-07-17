@@ -1,4 +1,3 @@
-///48/47
 const jwt = require("jsonwebtoken");
 
 const generateToken = (id) => {
